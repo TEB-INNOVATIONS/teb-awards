@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TEB Innovations | Awards & Projects</title>
+  <link rel="icon" href="images/logo.png" type="image/logo">
+  <link href="bootstrap.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+       <link rel="icon" href="images/tab.png" type="image/logo">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="music-bg" id="musicGlow"></div>
+
+  <!-- Preloader overlay: shows percentage + motivational messages while images load -->
+  <div class="preloader-overlay" id="preloader" role="status" aria-live="polite">
+    <div class="float-circle c1" aria-hidden="true"></div>
+    <div class="float-circle c2" aria-hidden="true"></div>
+    <div class="preloader-box" role="dialog" aria-label="Loading content">
+      <div class="preloader-left">
+        <div class="preloader-headline">Hold tight — good things loading</div>
+        <div class="preloader-sub">We&apos;re fetching images and preparing the experience</div>
+        <div class="preloader-quote" id="preloaderQuote">Loading inspiring content…</div>
+        <div class="preloader-mini">Tip: You can skip the loader anytime</div>
+      </div>
+      <div class="preloader-right">
+        <div class="preloader-percent" id="preloaderPercent">0%</div>
+        <div style="width:100%">
+          <div class="preloader-bar" aria-hidden="true"><div class="preloader-bar-fill" id="preloaderFill"></div></div>
+          <div style="display:flex;gap:.6rem;justify-content:center;margin-top:.6rem">
+            <button class="preloader-skip" id="preloaderSkip">Skip</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Welcome Dialog -->
+  <div class="dialog-overlay" id="welcomeDialog">
+    <div class="dialog-box">
+      <h2>🎉 Welcome to TEB Awards</h2>
+      <p>Click “OK” to begin the experience with music.</p>
+      <button onclick="startExperience()">OK</button>
+    </div>
+  </div>
+
+  <section class="py-5">
+    <h2 class="section-title" data-aos="fade-up">TEB Innovations Journey</h2>
+
+<div class="timeline">
+    <div class="timeline-progress" id="timelineProgress" aria-hidden="true"></div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (1).png" alt="Project 1">
+          <h4>TEB INNOVATIONS</h4>
+          <p><strong>Launched</strong></p>
+          <p><strong>Date:</strong> 20 June 2024</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (2).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Developed</strong></p>
+          <p><strong>Date:</strong>23 Augest 2024</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (3).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Suprabhatham</p>
+          <p><strong>Date:</strong> 23 August 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (4).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Malayalam Manorama</p>
+          <p><strong>Date:</strong> 23 August 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (5).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Nattuvartha News</p>
+          <p><strong>Date:</strong> 23 August 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (6).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Cherukavu News</p>
+          <p><strong>Date:</strong> 23 August 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (7).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Shabdam News</p>
+          <p><strong>Date:</strong> 23 August 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (8).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Vazhayoor Cafe News</p>
+          <p><strong>Date:</strong> 23 August 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (9).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Kerala 360 News</p>
+          <p><strong>Date:</strong> 23 August 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (10).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Prize:</strong> First with A grade</p>
+          <p><strong>Program:</strong> SubDistrict Level Science Fair</p>
+          <p><strong>Date:</strong> 16 September 2024</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (11).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Prize:</strong> First Prize</p>
+          <p><strong>Program:</strong> Karunya State Level Science Fair</p>
+          <p><strong>Date:</strong> 21 September 2024</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (12).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Prize:</strong> First Prize with A grade</p>
+          <p><strong>Program:</strong> District Level Science Fair</p>
+          <p><strong>Date:</strong> 26 September 2024</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (13).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Mathrbhumi News</p>
+          <p><strong>Date:</strong> 26 September 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (14).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Manorama News</p>
+          <p><strong>Date:</strong> 26 September 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (15).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Mathrbhumi News</p>
+          <p><strong>Date:</strong> 26 September 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (16).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Chandrika News</p>
+          <p><strong>Date:</strong> 26 September 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (17).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Manorama News</p>
+          <p><strong>Date:</strong> 26 September 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (18).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Deshabhimani News</p>
+          <p><strong>Date:</strong> 26 September 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (19).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Suprabhatham News</p>
+          <p><strong>Date:</strong> 27 September 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (20).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Mathrbhumi News</p>
+          <p><strong>Date:</strong> 27 September 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (21).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Kerala Kaumudi</p>
+          <p><strong>Date:</strong> 27 September 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (22).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Prize:</strong> A grade</p>
+          <p><strong>Program:</strong> State Level Science Fair</p>
+          <p><strong>Date:</strong> 19 November 2024</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (24).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Unavailable</p>
+          <p><strong>Date:</strong> 19 November 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (25).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Unavailable</p>
+          <p><strong>Date:</strong> 19 November 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (26).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Unavailable</p>
+          <p><strong>Date:</strong> 19 November 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (27).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Unavailable</p>
+          <p><strong>Date:</strong> 19 November 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (28).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Unavailable</p>
+          <p><strong>Date:</strong> 19 November 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (29).png" alt="Project 2">
+          <h4>Eye Sight AI</h4>
+          <p><strong>Developed</strong></p>
+          <p><strong>Date:</strong>08 December 2024</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (30).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Prize:</strong> Best Project 2k24</p>
+          <p><strong>Program:</strong> ATL Mini Expo</p>
+          <p><strong>Date:</strong> 5 January 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (31).png" alt="Project 2">
+          <h4>Eye Sight AI</h4>
+          <p><strong>Prize:</strong> Best Project 2k24</p>
+          <p><strong>Program:</strong> ATL Mini Expo</p>
+          <p><strong>Date:</strong> 5 January 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (32).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Prize:</strong> Top 10 in India</p>
+          <p><strong>Program:</strong> Big Bang 2025-26</p>
+          <p><strong>Date:</strong> 25 January 2025</p>
+        </div>
+      </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (33).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> The Kovai Mail</p>
+          <p><strong>Date:</strong> 25 January 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (34).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Mamgalam</p>
+          <p><strong>Date:</strong> 25 January 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (35).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Media Plus</p>
+          <p><strong>Date:</strong> 25 January 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (36).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Local News</p>
+          <p><strong>Date:</strong> 25 January 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (37).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Life Zone Malappuram</p>
+          <p><strong>Date:</strong> 26 January 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (38).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Atal Innovation Mission News</p>
+          <p><strong>Date:</strong> 28 January 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (39).png" alt="Project 2">
+          <h4>Edu BOT AI</h4>
+          <p><strong>Prize:</strong> Best Perfomance</p>
+          <p><strong>Program:</strong> Technora Fest</p>
+          <p><strong>Date:</strong> 4 February 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (40).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Programe:</strong> Dhanyam Program</p>
+          <p><strong>Date:</strong> 10 March 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (41).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Prize:</strong> Selected</p>
+          <p><strong>Program:</strong> Priliminary Winner | YIP 7.0</p>
+          <p><strong>Date:</strong> 03 May 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (42).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Prize:</strong> Best Project</p>
+          <p><strong>Program:</strong> Ente Keralam</p>
+          <p><strong>Date:</strong> 09 May 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (43).png" alt="Project 3">
+          <h4>TEB Innovations</h4>
+          <p><strong>Programe:</strong> First Anniversary</p>
+          <p><strong>Date:</strong> 10 July 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (44).png" alt="Project 3">
+          <h4>TEB Innovations</h4>
+          <p><strong>Programe:</strong> Conducted Environmental Day Quiz</p>
+          <p><strong>Date:</strong> 11 July 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (45).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Prize:</strong> Selected</p>
+          <p><strong>Program:</strong> District Level | YIP 7.0</p>
+          <p><strong>Date:</strong> 21 July 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (46).png" alt="Project 3">
+          <h4>TEB Innovations</h4>
+          <p><strong>Programe:</strong> Conducted Mega Tinkering Day</p>
+          <p><strong>Date:</strong> 13 Augest 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (47).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Prize:</strong> Selected</p>
+          <p><strong>Program:</strong> Priliminary Winner | YIP 8.0</p>
+          <p><strong>Date:</strong> 07 October 2025</p>
+        </div>
+      </div>
+
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (48).png" alt="Project 2">
+          <h4>Dr. Zoe</h4>
+          <p><strong>Developed</strong></p>
+          <p><strong>Date:</strong>10 October 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (49).png" alt="Project 2">
+          <h4>Dr. Zoe</h4>
+          <p><strong>Prize:</strong> Appriciation</p>
+          <p><strong>Program:</strong> Karunya National Level Mindspark</p>
+          <p><strong>Date:</strong> 13 October 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (50).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Prize:</strong> 1st Prize</p>
+          <p><strong>Program:</strong> YIP 7.0 State Level Winners</p>
+          <p><strong>Date:</strong> 16 October 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (51).png" alt="Project 3">
+          <h4>Edu Bot AI</h4>
+          <p><strong>News:</strong> Mathrbhumi News</p>
+          <p><strong>Date:</strong> 19 October 2025</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <img src="images/tebaward (52).png" alt="Project 2">
+          <h4>Edu Bot AI</h4>
+          <p><strong>Prize:</strong> Appreceation</p>
+          <p><strong>Program:</strong> BRC Kondotty 8.0</p>
+          <p><strong>Date:</strong> 25 October 2025</p>
+        </div>
+      </div>
+  </section>
+
+  <footer>
+    &copy; 2025 TEB Innovations. All rights reserved.
+  </footer>
+
+  <!-- Image Modal -->
+  <div class="modal" id="imageModal" onclick="closeModal()">
+    <img id="modalImg" src="">
+  </div>
+
+  <!-- Feedback Modal (appears after 2 minutes) -->
+  <div class="feedback-modal" id="feedbackModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="feedback-box">
+      <h3>We'd love your feedback</h3>
+      <p class="feedback-note">Please help us improve — this takes less than a minute.</p>
+      <form id="submit-form">
+        <div class="feedback-row">
+          <div class="col"><label>Name<span style="color:#ff4e4e"> *</span><br><input name="Name" id="fbName" required></div>
+          <div class="col"><label>Phone<span style="color:#ff4e4e"> *</span><br><input name="Phone" id="fbPhone" required></div>
+        </div>
+        <div class="feedback-row">
+          <div class="col"><label>Email (optional)<br><input name="Email" id="fbEmail" type="email" placeholder="you@example.com"></div>
+        </div>
+        <div>
+          <label>Feedback<span style="color:#ff4e4e"> *</span></label>
+          <textarea name="Feedback" id="fbFeedback" required placeholder="Tell us what you liked or what we can improve..."></textarea>
+        </div>
+        <div class="feedback-actions">
+          <button type="button" class="btn-secondary" id="fbRemind">Remind me later</button>
+          <button type="button" class="btn-secondary" id="fbClose">Close</button>
+          <button type="submit" class="btn-feedback">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- MUSIC -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="bootstrap.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
