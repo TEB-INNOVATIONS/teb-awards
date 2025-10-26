@@ -211,7 +211,7 @@
     (function(){
       const FEEDBACK_KEY = 'teb_feedback_submitted';
       const REMIND_KEY = 'teb_feedback_remind_at';
-      const delay = 5 * 1000; // 30 seconds
+     const delay = 2 * 60 * 1000; // 2 minutes
       const feedbackModal = document.getElementById('feedbackModal');
       const form = document.getElementById('submit-form');
       const fbRemind = document.getElementById('fbRemind');
